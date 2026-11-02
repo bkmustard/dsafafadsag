@@ -1,0 +1,6 @@
+{
+  "name": "기반스타즈 Season 8: 도약",
+  "description": "기반스타즈 8시즌: 도약",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

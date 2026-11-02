@@ -1,0 +1,61 @@
+export const ALLOWED_NAMES = [
+  '붐',
+  '로스',
+  '문호',
+  '모노',
+  '폰',
+  '폰테',
+  '디렉',
+  '젠티',
+  '채나',
+  '벡스',
+  '파필리온',
+  '스타릿',
+  '아티',
+  '키',
+  '토이엇',
+  '세이지',
+  '플로라',
+  '퀵사',
+  '하윤',
+  '딜리',
+  '링',
+  '멜라니',
+] as const;
+
+export const PREFIX_MODIFIERS = [
+  '빛을 품은',
+  '하늘을 가르는',
+  '불타오르는',
+  '용감무쌍한',
+  '도약하는',
+  '신속한',
+  '찬란한',
+  '칠흑의',
+  '천상을 꿈꾸는',
+  '지옥불을 다루는',
+  '무적의',
+  '영웅적인',
+  '폭풍의',
+  '깨어난',
+  '결의에 찬',
+  '지혜로운',
+  '날렵한',
+  '고결한',
+  '은빛의',
+  '황금빛의',
+  '거침없는',
+  '전설의',
+  '바람을 타는',
+  '초월한',
+  '눈부신',
+  '불꽃 같은',
+  '광채의',
+  '심연을 딛는',
+] as const;
+
+export function generateRandomName(): string {
+  const prefix = PREFIX_MODIFIERS[Math.floor(Math.random() * PREFIX_MODIFIERS.length)];
+  const name = ALLOWED_NAMES[Math.floor(Math.random() * ALLOWED_NAMES.length)];
+  return `${prefix} ${name}`;
+}
